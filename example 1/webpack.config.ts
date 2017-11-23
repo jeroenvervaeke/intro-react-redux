@@ -17,16 +17,11 @@ const config: webpack.Configuration = {
   cache: true,
   entry: {
     'scripts/main': './src/main.tsx',
-    'scripts/vendor': [
-      'react',
-      'react-dom',
-      'redux'
-    ]
+    'script/vendor': ['babel-polyfill']
   },
   output: {
     path: path.resolve(__dirname, './dist/'),
-    filename: '[name].js',
-    chunkFilename: '[chunkhash].js'
+    filename: '[name].js'
   },
   module: {
     rules: [{
