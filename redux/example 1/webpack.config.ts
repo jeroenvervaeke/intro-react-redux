@@ -5,7 +5,8 @@ import * as HtmlWebpackPlugin from 'html-webpack-plugin';
 const config: webpack.Configuration = {
   cache: true,
   entry: {
-    'scripts/main': './src/main.tsx'
+    'scripts/main': './src/main.tsx',
+    'scripts/vendor': ['babel-polyfill']
   },
   output: {
     path: path.resolve(__dirname, './dist/'),

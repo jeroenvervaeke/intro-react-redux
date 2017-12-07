@@ -17,7 +17,7 @@ const config: webpack.Configuration = {
   cache: true,
   entry: {
     'scripts/main': './src/main.tsx',
-    'script/vendor': ['babel-polyfill']
+    'scripts/vendor': ['babel-polyfill']
   },
   output: {
     path: path.resolve(__dirname, './dist/'),
