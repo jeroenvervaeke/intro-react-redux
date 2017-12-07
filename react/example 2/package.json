@@ -29,5 +29,8 @@
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress",
     "build": "node ./node_modules/webpack/bin/webpack.js -p"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
   }
 }
