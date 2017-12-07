@@ -43,6 +43,10 @@ var rootReducer = combineReducers<ExampleStore>({
 });
 
 const store = createStore<ExampleStore>(rootReducer, composeWithDevTools());
+store.subscribe(() => {
+    var state = store.getState()
+    console.log("State changed!", state);
+});
 
 store.dispatch({ type: ActionTypes.Increase, payload: 1 });
 store.dispatch({ type: ActionTypes.Decrease, payload: 5 });
